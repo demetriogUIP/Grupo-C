@@ -1,29 +1,46 @@
 import operaciones
+from cuento import imprimir_cuento
 
-# ... (import cuento si ya está)
+def menu():
+    print("\n=== PROYECTO COLABORATIVO PYTHON ===")
+    print("1. Operaciones matemáticas")
+    print("2. Imprimir un cuento")
+    print("3. Salir")
 
-print("--- Proyecto Colaborativo Python ---")
-print("Calculos:")
+while True:
+    menu()
+    opcion = input("Seleccione una opción: ")
 
-# Uso directo de las funciones de operaciones.py
-num1 = 20
-num2 = 8
-num_cero = 0
+    if opcion == "1":
+        print("\n--- OPERACIONES MATEMÁTICAS ---")
+        try:
+            a = float(input("Ingrese el primer número: "))
+            b = float(input("Ingrese el segundo número: "))
+            print(f"Suma: {operaciones.sumar(a, b)}")
+            print(f"Resta: {operaciones.restar(a, b)}")
+            print(f"Multiplicación: {operaciones.multiplicar(a, b)}")
+            print(f"División: {operaciones.dividir(a, b)}")
+        except ValueError:
+            print("Por favor ingrese números válidos.")
 
-resultado_suma = operaciones.sumar(num1, num2)
-print(f"La suma de {num1} y {num2} es: {resultado_suma}")
+    elif opcion == "2":
+        print("\n--- CUENTOS DISPONIBLES ---")
+        print("1. Dragón y montaña")
+        print("2. Niña y bosque mágico")
+        print("3. Ratón valiente")
+        eleccion = input("Ingrese el número del cuento que desea leer: ")
+        try:
+            eleccion_num = int(eleccion)
+            if eleccion_num in [1, 2, 3]:
+                imprimir_cuento(eleccion_num)
+            else:
+                print("Opción no válida. Por favor seleccione 1, 2 o 3.")
+        except ValueError:
+            print("Entrada inválida. Por favor ingrese un número válido.")
 
-resultado_resta = operaciones.restar(num1, num2)
-print(f"La resta de {num1} y {num2} es: {resultado_resta}")
+    elif opcion == "3":
+        print("¡Hasta luego!")
+        break
 
-resultado_multiplicacion = operaciones.multiplicar(num1, num2)
-print(f"La multiplicacion de {num1} y {num2} es: {resultado_multiplicacion}")
-
-resultado_division = operaciones.dividir(num1, num2)
-print(f"La division de {num1} y {num2} es: {resultado_division}")
-
-resultado_division_cero = operaciones.dividir(num1, num_cero)
-print(f"Division por cero ({num1} y {num_cero}): {resultado_division_cero}")
-
-
-# ... (Espacio para el Colaborador de 'cuento.py')
+    else:
+        print("Opción no válida, intente de nuevo.")
