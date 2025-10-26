@@ -13,9 +13,7 @@ Lila hizo amigos increíbles y aprendió lecciones que nunca olvidaría.""",
 Se enfrentó a ríos caudalosos, gatos traviesos y caminos interminables. 
 Pero con astucia y coraje, siempre encontraba la manera de seguir adelante y regresar a casa sano y salvo."""
         
-        4: """Había una niña llamada Sofía que vivía cerca del mar en Panamá.
-Cada día recogía conchas y soñaba con viajar más allá del horizonte.
-Un día, el mar le trajo una botella con un mapa... y comenzó la mayor aventura de su vida."""
+
     }
     
     print("\n--- CUENTO ---")
