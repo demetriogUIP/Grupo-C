@@ -43,4 +43,4 @@ python main.py
 
 * El proyecto está organizado por una especie de modulos para mantener el código limpio y fácil de mantener enfocado en la POO.
 
-
+* Creacion de Rama development para mantener el codigo en staging
