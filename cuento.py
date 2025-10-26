@@ -15,7 +15,7 @@ Pero con astucia y coraje, siempre encontraba la manera de seguir adelante y reg
         
         4: """Había una niña llamada Sofía que vivía cerca del mar en Panamá.
 Cada día recogía conchas y soñaba con viajar más allá del horizonte.
-Un día, el mar le trajo una botella con un mapa... y comenzó la mayor aventura de su vida."""
+Un día, el mar le trajo una botella con un mapa... y comenzó la mayor aventura de su vida..."""
     }
     
     print("\n--- CUENTO ---")
