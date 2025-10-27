@@ -20,6 +20,8 @@ while True:
             print(f"Resta: {operaciones.restar(a, b)}")
             print(f"Multiplicación: {operaciones.multiplicar(a, b)}")
             print(f"División: {operaciones.dividir(a, b)}")
+            print(f"Potencia (base, potencia): {operaciones.potencias(a, b)}")
+            print(f"Raíz (indice, radicando): {operaciones.raices(a, b)}")
         except ValueError:
             print("Por favor ingrese números válidos.")
 
